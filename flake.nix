@@ -1,47 +1,48 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    zig2nix = {
-      url = "github:Cloudef/zig2nix";
+    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
+    zon2nix = {
+      url = "git+https://github.com/jcollie/zon2nix.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = {
-    self,
-    nixpkgs,
-    zig2nix,
-    ...
-  }: let
-    inherit (nixpkgs) lib;
-    forAllSystems = body:
-      lib.genAttrs lib.systems.flakeExposed (system:
-        body {
+  outputs =
+    {
+      self,
+      nixpkgs,
+      zon2nix,
+      ...
+    }:
+    let
+      makePackages =
+        system:
+        import nixpkgs {
           inherit system;
-          pkgs = nixpkgs.legacyPackages.${system};
-          env = zig2nix.outputs.zig-env.${system} {
-            nixpkgs = nixpkgs;
-          };
-        });
-  in {
-    packages = forAllSystems (
-      {
-        system,
-        env,
-        ...
-      }: {
-        zine = env.package {
-          src = lib.cleanSource ./.;
-          nativeBuildInputs = [];
-          buildInputs = [];
-          zigPreferMusl = false;
         };
-        default = self.packages.${system}.zine;
-      }
-    );
-    devShells = forAllSystems (
-      {env, ...}: {
-        default = env.mkShell {};
-      }
-    );
-  };
+      forAllSystems = (
+        function:
+        nixpkgs.lib.genAttrs [
+          "aarch64-linux"
+          "aarch64-darwin"
+          "x86_64-linux"
+          "x86_64-darwin"
+        ] (system: function (makePackages system))
+      );
+    in
+    {
+      packages = forAllSystems (pkgs: {
+        zine = pkgs.callPackage ./package.nix { };
+        default = self.packages.${pkgs.system}.zine;
+      });
+      devShells = forAllSystems (pkgs: {
+        zig_0_15 = pkgs.mkShell {
+          nativeBuildInputs = [
+            pkgs.zig_0_15
+            pkgs.pinact
+            zon2nix.packages.${pkgs.system}.zon2nix
+          ];
+        };
+        default = self.devShells.${pkgs.system}.zig_0_15;
+      });
+    };
 }

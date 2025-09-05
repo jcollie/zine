@@ -4,11 +4,11 @@
     .fingerprint = 0xa466bcb520a7eea2,
     .minimum_zig_version = "0.15.0",
     .dependencies = .{
-        .afl_kit = .{
-            .url = "git+https://github.com/kristoff-it/zig-afl-kit#8ef04d1db48650345dca68da1e1b8f2615125c40",
-            .hash = "afl_kit-0.1.0-NdJ3cvscAACLEvjZTB017IAks_Uq5ux1qpA-klDe384Y",
-            .lazy = true,
-        },
+        // .afl_kit = .{
+        //     .url = "git+https://github.com/kristoff-it/zig-afl-kit#8ef04d1db48650345dca68da1e1b8f2615125c40",
+        //     .hash = "afl_kit-0.1.0-NdJ3cvscAACLEvjZTB017IAks_Uq5ux1qpA-klDe384Y",
+        //     .lazy = true,
+        // },
         .lsp_kit = .{
             .url = "git+https://github.com/zigtools/lsp-kit#4835b9d3d3cf732fe1830189d81f331c68fb3e77",
             .hash = "lsp_kit-0.1.0-bi_PL18tCgAMyrZ0tgn_0PXnGEvxGWeNkkRygfe9pX9u",
