@@ -92,11 +92,11 @@ let
 in
 linkFarm name [
   {
-    name = "AFLplusplus-4.21.0-aA1y4UtxAABpnSIF7ARSYDMRyqNcI-2Rwa5UeSsuw70v";
+    name = "AFLplusplus-4.21.0-aA1y4dZxAADpqYGALLosVdQlaX0yTfMPLbg_p-f-zeSg";
     path = fetchZigArtifact {
       name = "AFLplusplus";
-      url = "git+https://github.com/allyourcodebase/AFLplusplus#a52f1376e2d49720c39e4abf4aa4944afbf82191";
-      hash = "sha256-AlkULC20/RTGMTPk2xWcdXCQlWn3sY3VrD0NRRoTZqY=";
+      url = "git+https://github.com/allyourcodebase/AFLplusplus?ref=refs/pull/7/head#12381a97cf5afccc87da4dba680fbef31519bc47";
+      hash = "sha256-hhapvObfBtyea3zlVVLPJa7Ce+mLDPduPRz8wIdlxG8=";
     };
   }
   {
@@ -108,11 +108,11 @@ linkFarm name [
     };
   }
   {
-    name = "afl_kit-0.1.0-NdJ3cvscAACLEvjZTB017IAks_Uq5ux1qpA-klDe384Y";
+    name = "afl_kit-0.1.0-NdJ3chAdAABiOcwXk_aKGpzGr3ou0qIxAVnVjUqXyvii";
     path = fetchZigArtifact {
       name = "afl_kit";
-      url = "git+https://github.com/kristoff-it/zig-afl-kit#8ef04d1db48650345dca68da1e1b8f2615125c40";
-      hash = "sha256-J0xbmsokjlhOav9KLlH2y4qiSgBit4nS+x6Q10L2OSA=";
+      url = "git+https://github.com/jcollie/zig-afl-kit#98859bc815166d253764b498669ec4df75a15c37";
+      hash = "sha256-03qwnL1GsfWu+mCaJLIkKYYjJgeGiRbWbtq1aaVKX7I=";
     };
   }
   {
@@ -188,27 +188,27 @@ linkFarm name [
     };
   }
   {
-    name = "scripty-0.1.0-LKK5O7v4AADWWXuFcTJky_5sY12tmw3kRi3k2wkpfxAX";
+    name = "scripty-0.1.0-LKK5O7f4AADajW5A_FsfNQBqRts7MiIZZkGVXkXDCCcg";
     path = fetchZigArtifact {
       name = "scripty";
-      url = "git+https://github.com/kristoff-it/scripty#50dbab8945440089384f26ec165d870c29555247";
-      hash = "sha256-r3L4iLpJUH93S0tH6d6w3pHcLzAaKZPSFBAgpnTMdeI=";
+      url = "git+https://github.com/jcollie/scripty#17a8ee8ada33bd45329d96671e25c7f09e998144";
+      hash = "sha256-TcXigINJ9ifsVha5i+BpACcZXHiWYJjbnwuADix+nRo=";
     };
   }
   {
-    name = "superhtml-0.4.0-Y7MdPJTWDQBJJoaCLlBYLGrjhAnmWAtVhVGelveq3O-s";
+    name = "superhtml-0.4.0-Y7MdPIzWDQBLKgxL-eJsOlDbtwi2zlV8ZiRLDL9U7s5p";
     path = fetchZigArtifact {
       name = "superhtml";
-      url = "git+https://github.com/kristoff-it/superhtml#8cb16babb0c66b6512d6aeb4cbc37ed90641d980";
-      hash = "sha256-lLZqyqVEUCn9z++9lPnrK8R2uDvht5v+5Y8KOZDgPs0=";
+      url = "git+https://github.com/jcollie/superhtml#a91bf7cda017e1cf4ef82acfebd380d646146c2c";
+      hash = "sha256-gyVmpYDmiQBGW0sDSmjfqJ6YrqSDzp96HF44AI0piJI=";
     };
   }
   {
-    name = "supermd-0.1.0-3Mco3FuSWADFrR3JOpE7xgETAd8kD8bikv_PsXE7qk18";
+    name = "supermd-0.1.0-3Mco3FOSWACBcvUXfmBu1tsVRP3o_R5TXHl5-QCcBnkv";
     path = fetchZigArtifact {
       name = "supermd";
-      url = "git+https://github.com/kristoff-it/supermd#e74d65e3cdf3a1c89e3f627b700b901896ee04f6";
-      hash = "sha256-D7/QNrogvvsXDzYN+/KWoWUBe0Vs/TAADtuEm+Dr35E=";
+      url = "git+https://github.com/jcollie/supermd#d73a30b34fb31cfb2389a9a9f14a418231fadabb";
+      hash = "sha256-h8DoDwfx9mO6ls9GwQwDFVoLacbZGgZG9FajL5pPFc4=";
     };
   }
   {
