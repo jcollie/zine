@@ -2,7 +2,7 @@
     .name = .zine,
     .version = "0.11.1",
     .fingerprint = 0xa466bcb520a7eea2,
-    .minimum_zig_version = "0.15.0",
+    .minimum_zig_version = "0.15.1",
     .dependencies = .{
         // .afl_kit = .{
         //     .url = "git+https://github.com/kristoff-it/zig-afl-kit#8ef04d1db48650345dca68da1e1b8f2615125c40",
@@ -14,8 +14,8 @@
             .hash = "lsp_kit-0.1.0-bi_PL18tCgAMyrZ0tgn_0PXnGEvxGWeNkkRygfe9pX9u",
         },
         .scripty = .{
-            .url = "git+https://github.com/kristoff-it/scripty#50dbab8945440089384f26ec165d870c29555247",
-            .hash = "scripty-0.1.0-LKK5O7v4AADWWXuFcTJky_5sY12tmw3kRi3k2wkpfxAX",
+            .url = "git+https://github.com/jcollie/scripty#17a8ee8ada33bd45329d96671e25c7f09e998144",
+            .hash = "scripty-0.1.0-LKK5O7f4AADajW5A_FsfNQBqRts7MiIZZkGVXkXDCCcg",
         },
         .tracy = .{
             .url = "git+https://github.com/kristoff-it/tracy#67d2d89e351048c76fc6d161e0ac09d8a831dc60",
@@ -35,8 +35,8 @@
             .lazy = true,
         },
         .superhtml = .{
-            .url = "git+https://github.com/kristoff-it/superhtml#8cb16babb0c66b6512d6aeb4cbc37ed90641d980",
-            .hash = "superhtml-0.4.0-Y7MdPJTWDQBJJoaCLlBYLGrjhAnmWAtVhVGelveq3O-s",
+            .url = "git+https://github.com/jcollie/superhtml#a91bf7cda017e1cf4ef82acfebd380d646146c2c",
+            .hash = "superhtml-0.4.0-Y7MdPIzWDQBLKgxL-eJsOlDbtwi2zlV8ZiRLDL9U7s5p",
         },
         .zeit = .{
             .url = "git+https://github.com/sam701/zeit?ref=zig-0.15#46583c4695bade6841a558c0ce5648426b556214",
@@ -51,8 +51,8 @@
             .hash = "ziggy-0.1.0-kTg8v5pABgDztlefWHceH-Sh8tVveguFC61QkmLkIRaA",
         },
         .supermd = .{
-            .url = "git+https://github.com/kristoff-it/supermd#e74d65e3cdf3a1c89e3f627b700b901896ee04f6",
-            .hash = "supermd-0.1.0-3Mco3FuSWADFrR3JOpE7xgETAd8kD8bikv_PsXE7qk18",
+            .url = "git+https://github.com/jcollie/supermd#d73a30b34fb31cfb2389a9a9f14a418231fadabb",
+            .hash = "supermd-0.1.0-3Mco3FOSWACBcvUXfmBu1tsVRP3o_R5TXHl5-QCcBnkv",
         },
     },
     .paths = .{"."},
