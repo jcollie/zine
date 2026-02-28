@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1756875158,
-        "narHash": "sha256-nDWEPoSmjN0P/NG9XntBijws0vwxnbeq+pKBLJGC0sA=",
-        "rev": "d0fc30899600b9b3466ddb260fd83deb486c32f1",
+        "lastModified": 1771848320,
+        "narHash": "sha256-2j5NAPU1sTVgnrj1FLxkBABP63q2DiRU2eIfEG56kPk=",
+        "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-25.11pre855242.d0fc30899600/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.05pre953160.2fc6539b481e/nixexprs.tar.xz"
       },
       "original": {
         "type": "tarball",
@@ -26,11 +26,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1757108721,
-        "narHash": "sha256-F/aIqn76zO7tSx4I8/1Pg1qJ+jXzNkSXtr2U/IXlF0A=",
+        "lastModified": 1762717967,
+        "narHash": "sha256-iL7BNlatn34yABkggwdo/Gb+tNHyIl9sD6uCIbd5Nno=",
         "ref": "refs/heads/main",
-        "rev": "7b5973f0ca5b077354c273143a437e4f53bfc4d7",
-        "revCount": 476,
+        "rev": "28d75a74ac02eef5af438b6bccd9dd1fc840729e",
+        "revCount": 486,
         "type": "git",
         "url": "https://github.com/jcollie/zon2nix.git"
       },

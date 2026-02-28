@@ -37,7 +37,7 @@
       devShells = forAllSystems (pkgs: {
         zig_0_15 = pkgs.mkShell {
           nativeBuildInputs = [
-            pkgs.zig_0_15
+            pkgs.zig
             pkgs.pinact
             zon2nix.packages.${pkgs.system}.zon2nix
           ];
